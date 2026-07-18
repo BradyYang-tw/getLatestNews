@@ -6,7 +6,7 @@ const grid = document.querySelector('#news-grid');
 const status = document.querySelector('#status');
 const title = document.querySelector('#result-title');
 const count = document.querySelector('#result-count');
-const apiBaseUrl = (window.NEWS_API_BASE_URL || 'http://localhost:3001').replace(/\/$/, '');
+const apiBaseUrl = (window.NEWS_API_BASE_URL || 'https://apigateway.bradydaddy.com').replace(/\/$/, '');
 
 const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (char) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'

@@ -11,7 +11,7 @@ cd getLatestNews
 npm start
 ```
 
-接著開啟 <http://localhost:3000>。搜尋前請另外啟動後端（預設為 <http://localhost:3001>）。
+接著開啟 <http://localhost:3000>。前端預設透過正式 Gateway `https://apigateway.bradydaddy.com` 查詢新聞。
 
 開發時可使用自動重啟模式：
 
@@ -21,6 +21,6 @@ npm run dev
 
 ## API 設定
 
-後端網址設定在 `public/config.js`。部署前端時，請將 `NEWS_API_BASE_URL` 改成正式後端網址。
+後端網址設定在 `public/config.js`，目前為 `https://apigateway.bradydaddy.com`，新聞 API 完整網址是 `https://apigateway.bradydaddy.com/api/news`。
 
 新聞內容與連結由後端透過 Google News RSS 聚合，版權歸原始發布者所有。
