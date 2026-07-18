@@ -1,0 +1,14 @@
+{
+  "name": "get-latest-news",
+  "version": "1.0.0",
+  "private": true,
+  "description": "getLatestNews 靜態前端",
+  "type": "module",
+  "scripts": {
+    "start": "node dev-server.mjs",
+    "dev": "node --watch dev-server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
